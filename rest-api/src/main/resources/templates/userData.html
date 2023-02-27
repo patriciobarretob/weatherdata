@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Weather Data</title>
+</head>
+<body>
+<table>
+    <tr th:each="sensor : ${sensors}">
+        <td><h4>Sensor Details: </h4></td>
+        <td><p th:text="${sensor.toString()}"></p></td>
+    </tr>
+</table>
+</body>
+</html>

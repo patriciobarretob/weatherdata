@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to Sensor Data management!</h1>
+    <a href="/viewAll">View All Sensor Data</a>
+
+    <form action="/save" method="post">
+        <table>
+            <tr>
+                <td><label>Sensor ID</label></td>
+                <td><input type="text" name="sensorID" placeholder="1" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Date Time (yyyy-MM-dd HH:mm:ss)</label></td>
+                <td><input type="text" name="dateTime" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Temperature</label></td>
+                <td><input type="text" name="temperature" value="0.0"></td>
+            </tr>
+
+            <tr>
+                <td><label>Humidity</label></td>
+                <td><input type="text" name="humidity" value="0.0"></td>
+            </tr>
+
+            <tr>
+                <td><label>WindSpeed</label></td>
+                <td><input type="text" name="windSpeed" value="0.0"></td>
+            </tr>
+
+            <tr>
+                <td><label>RainFall</label></td>
+                <td><input type="text" name="rainFall" value="0.0"></td>
+            </tr>
+
+            <tr>
+                <td><label>SnowFall</label></td>
+                <td><input type="text" name="snowFall" value="0.0"></td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

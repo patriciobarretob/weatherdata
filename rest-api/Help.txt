@@ -1,0 +1,21 @@
+# use below command in Postman to save new sensor data
+POST http://localhost:8080/api/v1/weatherData
+{
+    "sensorID" : 2,
+    "dateTime" : "2023-02-21 15:42:00",
+    "temperature" : 1000,
+    "humidity" : 1000,
+    "windSpeed" : 1000,
+    "rainFall" : 1200.5,
+    "snowFall" : 9900
+}
+
+# use below command in postman to get sensor data
+# You can send multiple sensors id by concatenating with comma or just write all
+# possible values for range: day / month / week / all
+# possible values for mode: min / max / sum / avg
+GET http://localhost:8080/api/v1/weatherData/sensors/1,2?range=all&mode=avg
+
+## To use the UI
+http://localhost:8080/
+# here you can post new Sensor data and go to view all sensor info in all and avg mode.
